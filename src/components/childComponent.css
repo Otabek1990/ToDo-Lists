@@ -1,0 +1,114 @@
+
+.task_app{
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px
+}
+.input_task{
+	text-align: center;
+}
+.input{
+	width: 40%;
+	outline :0 none;
+	
+
+}
+.add_btn,.done_btn{
+padding: 4px 16px;
+	border-radius:5px;
+		outline :0 none;
+
+}
+.add_btn:hover,.done_btn:hover{
+		outline :0 none;
+
+}
+
+.ul_list{
+	list-style-type: upper-roman;
+	color:red;
+	float:left;
+	text-align: center;
+   width: 45%;
+	margin-top: 30px;
+	margin-left:100px;
+
+}
+.list_items:hover,.list_items_done:hover{
+	background-color: orange;
+	cursor: pointer;
+	outline :0 none;
+
+
+
+}
+.list_items, .list_items_done{
+	text-align: left;
+margin: auto;
+	list-style-type:upper-hexadecimal;
+	border: 2px solid #ffff;
+	border-radius: 3px;
+padding: 5px 10px;
+width: 90%;
+margin-top: 18px;
+color: black
+
+}
+.list_items_done{
+	text-decoration: line-through 2px solid blue;
+}
+.delete_icon{
+	float:right;
+	color: white;
+	margin-bottom: 5px
+}
+.delete_icon:hover,.check_icon:hover{
+	cursor: pointer;
+}
+
+.check_icon{
+	float: right;
+	color: white
+}
+
+@media only screen and (max-width: 960px),
+@media only screen and (min-width: 200px){
+
+	.input{
+	width: 50%
+}
+.add_btn,.done_btn{
+padding: 4px 1px;
+	border-radius:5px;
+}
+.ul_list{
+		text-decoration:none;
+	text-align: center;
+   width: 100%;
+	margin-top: 30px;
+	margin-left:-100px;
+	margin-right: 5px
+}
+.delete_icon,.check_icon{
+	padding-bottom:2px;
+	margin-bottom:5px;
+	text-align:center;
+	align-items:center;
+	justify-content:center;
+}
+
+
+.list_items, .list_items_done{
+	text-align: left;
+	list-style-type: upper-norwegian;
+	border: 2px solid #ffff;
+	border-radius: 3px;
+padding: 5px 10px;
+width: 60%;
+margin-top: 18px;
+color: black;
+margin-left: 90px;
+font-size:14px;
+
+}
+}
